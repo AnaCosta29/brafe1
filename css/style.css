@@ -1,0 +1,375 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+  margin: 0px;
+  padding: 0px;
+}
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #252525;
+}
+
+/* Menu */
+
+.menu {
+  background: #252525;
+  padding: 20px 0;
+}
+
+.menu-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.menu-container::after, .menu-container::before {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+a.menu-logo {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 10px;
+}
+
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav a {
+  display: block;
+  color: white;
+  padding: 10px;
+  font-size: 1.125em;
+}
+
+/* Intro */
+
+.intro {
+  color: white;
+  /* para centralizar conteudo usei padding e text align */
+  padding: 150px 0;
+  text-align: center;
+  background: url(../brafe-1-puro/img/bg-intro.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.intro h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.intro h1::after {
+  content: '';
+  display: block;
+  background: white;
+  width: 20px;
+  height: 4px;
+  margin: 10px auto;
+}
+
+.intro p {
+  font-size: 1.125em;
+  font-style: italic;
+}
+
+/* Sobre */
+
+.sobre {
+  padding: 60px 0;
+}
+
+.sobre-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sobre-container::after, .sobre-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.sobre h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sobre-item {
+  width: 460px;
+  float: left;
+  margin: 0 10px;
+}
+
+.sobre-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.sobre-item h3 {
+  background: #252525;
+  color: white;
+  width: 220px;
+  font-style: italic;
+  font-size: 2.25em;
+  font-weight: normal;
+  line-height: 1em;
+  padding: 5px 0 10px 0;
+  position: relative;
+  text-align: center;
+  top: -25px;
+}
+
+.sobre>p {
+  width: 460px;
+  margin: 20px auto;
+  font-style: italic;
+  line-height: 1.4em;
+  font-size: 1.125em;
+}
+
+/* Produtos */
+
+.produto {
+  background: #e7e4d8;
+  padding: 60px 0;
+  border-top: 3px solid #d6d3c8;
+  border-bottom: 3px solid #d6d3c8;
+}
+
+.produto-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.produto-container::after, .produto-continer::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.produto-item {
+  width: 300px;
+  float: left;
+  margin: 0 10px 20px 10px;
+}
+
+.produto-item h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.produto-item h2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: currentColor;
+  border-radius: 50%;
+  margin: 20px auto;
+  border: 5px solid #d6d3c8;
+  box-shadow: 0 0 0 10px currentColor;
+}
+
+h2.produto-paulista::before {
+  color: #492901;
+}
+
+h2.produto-carioca::before {
+  color: #c17139;
+}
+
+h2.produto-mineiro::before {
+  color: #d7a54d;
+}
+
+.produto-item p {
+  font-size: 0.875em;
+  line-height: 1.4em;
+}
+
+.produto-btn {
+  display: block;
+  width: 180px;
+  margin: 20px auto 0 auto;
+  border: 3px solid #252525;
+  font-size: 1.125em;
+  font-family: Georgia, serif;
+  padding: 15px 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*  Locais */
+
+.locais {
+  margin: 0px auto;
+  max-width: 960px;
+  padding: 20px 0;
+}
+
+.locais-item {
+  clear: both;
+  margin: 60px auto;
+}
+
+.locais-item::after, .locais-item::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.locais-item img {
+  display: block;
+  width: 460px;
+  float: left;
+  margin: 0px 10px;
+}
+
+.locais-item>div {
+  width: 460px;
+  float: right;
+  margin: 0 10px;
+}
+
+.locais-item h2 {
+  font-size: 2.25em;
+  margin-bottom: 20px;
+}
+
+.locais-item p {
+  max-width: 320px;
+  line-height: 1.4em;
+  font-size: 1.125em;
+  margin-bottom: 20px;
+}
+
+.locais-btn {
+  border: 3px solid #252525;
+  color: #252525;
+  font-size: 1.125em;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Assine */
+
+.assine {
+  background: #e7e4d8;
+  padding: 30px 0;
+}
+
+.assine-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.assine-container::after, .assine-container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.assine-item {
+  max-width: 460px;
+  float: left;
+  margin: 0px 10px;
+}
+
+.assine-item h2 {
+  font-size: 2.25em;
+}
+
+.assine-item p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+/* Formulario */
+
+.assine form {
+  width: 460px;
+  margin: 10px  10px 0 10px;
+  float: left;
+}
+
+.assine form label {
+  display: none;
+}
+
+.assine input {
+  width: 320px;
+  float: left;
+  padding: 10px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, serif;
+ 
+}
+
+.assine button {
+  width: 140px;
+  padding: 13px 0;
+  background: #252525;
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+  border: none;
+  cursor: pointer;
+}
+/* rodape */
+.rodape{
+  background:#d6d3c8 ;
+  padding: 40px 0;
+}
+.rodape-container{
+  width: 960px;
+  margin: 0 auto;
+}
+.rodape-container::after,.rodape-container::before{
+  content: '';
+  display: table;
+  clear: both;
+}
+.rodape-container p{
+  font-size: 1.125em;
+  float: left;
+  margin: 0 10px;
+  line-height: 1.4em;
+  
+}
+.rodape-container img{
+  float: right;
+  margin: 0 10px;
+  display: block;
+}
